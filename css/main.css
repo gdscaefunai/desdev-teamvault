@@ -15,6 +15,7 @@
 header {
     padding: 10px 15px;
     top: 0;
+    z-index: 50;
     background-color: white;
 }
 
@@ -36,7 +37,7 @@ nav ul li a {
 }
 
 nav ul li {
-    margin-right: 10px;
+    margin-right: 18px;
 }
 
 nav ul .last-child {
@@ -108,7 +109,7 @@ nav ul .last-child {
 }
 
 main {
-    gap: 2;
+    gap: 1.5rem;
 }
 
 .sticky {
@@ -139,6 +140,7 @@ main {
     color: rgb(6, 6, 194);
     font-size: 1rem;
     font-weight: 600;
+    margin-left: 10px;
 }
 
 .menu-item {
@@ -147,9 +149,8 @@ main {
 }
 
 .menu-items {
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 15px;
+    padding: 5px;
+    margin-top: 10px;
 }
 
 .item-image-container {
@@ -167,26 +168,18 @@ main {
         font-size: 1.8rem;
     }
 
-    .menu-items {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
     nav ul li a {
         font-size: 1.2rem;
     }
 }
 
-@media (min-width: 768px) {
-    .menu-items {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 1rem;
-    }
-
+@media (min-width: 770px) {
     main {
-        padding-left: 10rem;
-        z-index: 50;
-        padding-top: 4rem;
-        padding-right: 10rem;
+        padding-left: 8rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-right: 8rem;
+        gap: 1.7rem;
     }
 
     .menu-section {
@@ -195,5 +188,84 @@ main {
 
     .menu-title {
         font-size: 1.8rem;
+    }
+}
+
+.carousel-cell {
+    width: 47%;
+    margin-right: 10px;
+}
+
+.image-holder {
+    background-size: cover;
+    background-position: center center;
+    height: 190px;
+    width: 100%;
+    margin: auto;
+}
+
+@media(min-width: 530px) {
+    .image-holder {
+        height: 160px;
+    }
+
+    .carousel-cell {
+        width: 31%;
+    }
+}
+
+@media(min-width: 640px) {
+    .carousel-cell {
+        width: 23%;
+    }
+
+    .image-holder {
+        height: 180px;
+    }
+}
+
+@media (min-width: 770px) {
+    .carousel-cell {
+        width: 22.5%;
+        margin-right: 14px;
+    }
+
+    .image-holder {
+        height: 175px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .carousel-cell {
+        width: 18.5%;
+        margin-right: 14px;
+    }
+
+    .image-holder {
+        height: 175px;
+    }
+}
+
+@media (min-width: 1450px) {
+    .carousel-cell {
+        margin-right: 20px;
+        width: 15.5%;
+    }
+
+    .image-holder {
+        height: 260px;
+    }
+}
+
+@media (min-width: 1450px) {
+    main {
+        padding-left: 25rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        padding-right: 25rem;
+    }
+
+    .menu-items {
+        padding: 20px;
     }
 }

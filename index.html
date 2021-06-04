@@ -2,43 +2,20 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/flickity.css">
     <title>Alpha Delicacy</title>
-
-    <style>
-        .carousel-cell {
-            width: 23%;
-            counter-increment: carousel-cell;
-            height: 130px;
-            margin-right: 10px;
-            background: white;
-            border-radius: 8px;
-        }
-
-        @media (min-width: 768px) {
-            .carousel-cell {
-                height: 200px;
-                width: 20%;
-            }
-        }
-
-        @media (min-width: 1440px) {
-            .carousel-cell {
-                height: 230px;
-            }
-        }
-    </style>
 
     <script src="js/flickity.js"></script>
 </head>
 
-<body>
-    <header class="sticky flex items-center justify-between box-shadow-md">
+<body class="bg-gray-300" onload="initializeCarousel()">
+    <header class="sticky flex items-center justify-between shadow-md bg-gray-50">
         <div class="logo">Logo</div>
-        <nav class="flex-1">
-            <ul class="flex flex-wrap">
+        <nav class="flex justify-end flex-1">
+            <ul class="flex flex-wrap text-blue-700">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Cart</a></li>
                 <li><a href="#">About</a></li>
@@ -47,50 +24,56 @@
             </ul>
         </nav>
     </header>
-    <main class="grid grid-cols-1">
+    <main class="grid grid-cols-1 gap-4">
         <!-- Menu section -->
         <div class="menu-section">
-            <div class="menu-title">
-                Drinks
-            </div>
-            <div class="carousel light-bg menu-items">
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
+            <div class="menu-title">Drinks</div>
+            <div class="carousel menu-items">
+                <div onclick="showMore(this)" class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
+                    <div class="image-holder"
+                        style="background-image: url('./images/pexels-evg-culture-1187766.jpg'); ">
+                    </div>
+                    <div class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">sample product
+                    </div>
+                    <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">&#8358; 700</div>
+                </div>
+                <div class="p-2 bg-gray-100 rounded-md shadow-md carousel-cell">
+                    <div class="image-holder"
+                        style="background-image: url('./images/pexels-thiszun-\(follow-me-on-ig-fb\)-1148215.jpg'); ">
+                    </div>
+                    <div class="pt-2 font-semibold text-center text-gray-800 capitalize">sample product</div>
+                    <div class="pt-2 font-bold text-center text-blue-700 capitalize">&#8358; 600</div>
+                </div>
+                <div class="p-2 bg-gray-100 rounded-md shadow-md carousel-cell">
+                    <div class="image-holder"
+                        style="background-image: url('./images/pexels-prem-pal-singh-tanwar-602750.jpg'); ">
+                    </div>
+                    <div class="pt-2 font-semibold text-center text-gray-800 capitalize">sample product</div>
+                    <div class="pt-2 font-bold text-center text-blue-700 capitalize">&#8358; 400</div>
+                </div>
+                <div class="p-2 bg-gray-100 rounded-md shadow-md carousel-cell">
+                    <div class="image-holder"
+                        style="background-image: url('./images/pexels-artem-beliaikin-2668308.jpg'); ">
+                    </div>
+                    <div class="pt-2 font-semibold text-center text-gray-800 capitalize">sample product</div>
+                    <div class="pt-2 font-bold text-center text-blue-700 capitalize">&#8358; 900</div>
+                </div>
+                <div class="p-2 bg-gray-100 rounded-md shadow-md carousel-cell">
+                    <div class="image-holder"
+                        style="background-image: url('./images/pexels-julia-sakelli-905485.jpg'); ">
+                    </div>
+                    <div class="pt-2 font-semibold text-center text-gray-800 capitalize">sample product</div>
+                    <div class="pt-2 font-bold text-center text-blue-700 capitalize">&#8358; 200</div>
+                </div>
             </div>
         </div>
 
-        <div class="menu-section">
-            <div class="menu-title">
-                Snacks
-            </div>
-            <div class="carousel light-bg menu-items">
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-            </div>
+        <div id="#modal" class="modal">
+
         </div>
     </main>
 
-    <script>
-        fetch('./js/data/products.json').then((response) => {
-            response.text((text) => {
-                console.log(text)
-            });
-        });
-        var elements = document.querySelectorAll('.carousel');
-        elements.forEach((element) => {
-            var flkty = new Flickity(element, {
-                groupCells: 5
-            });
-        });
-    </script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
