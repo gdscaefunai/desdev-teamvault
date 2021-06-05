@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.min.css">
+        <link rel="stylesheet" href="css/app.min.css">
+        <link rel="icon" href="icons/favicon-16x16.png">
+        <link rel="preload" as="script" href="js/app.min.js">
+        <link rel="stylesheet" href="css/flickity.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background-color: whitesmoke;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+            }
+
+            html {
+                box-sizing: border-box;
+            }
+
+            *,
+            *:before,
+            *:after {
+                box-sizing: inherit;
+            }
+
+            .column {
+                float: left;
+                width: 33.3%;
+                margin-bottom: 16px;
+                padding: 0 8px;
+            }
+
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                margin: 8px;
+            }
+
+            .about-section {
+                padding: 50px;
+                text-align: center;
+                background-color: white;
+                color: black;
+            }
+
+            .container {
+                padding: 0 16px;
+            }
+
+            .container::after,
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .title {
+                color: grey;
+            }
+
+            .button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            .button:hover {
+                background-color: white;
+            }
+
+            @media screen and (max-width: 650px) {
+                .column {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            .clr {
+                clear: both;
+            }
+
+
+            .container p {
+                margin: auto 1rem;
+                margin-bottom: 100px;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+                -webkit-line-clamp: 6;
+                overflow: hidden;
+                font-size: 1.325rem;
+            }
+
+            .container img {
+                margin: auto;
+                box-sizing: border-box;
+                border-radius: 50%;
+                height: 200px;
+                width: 200px;
+            }
+
+            .container h3 {
+                margin-top: 32px;
+                margin-bottom: 16px;
+                text-align: center;
+            }
+
+            figcaption {
+                text-transform: uppercase;
+                font-size: 16px bold;
+                font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+                margin-top: 27px;
+                margin-bottom: 46px;
+            }
+
+            .spacer {
+                flex: 1 1 auto;
+                background-color: unset;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="margin: 20px;">
+            <header class="sticky flex items-center justify-between shadow-md bg-white">
+                <div class="logo flex items-center">
+                    <img src="icons/android-icon-48x48.png" class="mr-3">
+                    <span class="hidden sm:inline">Chop Vault</span>
+                </div>
+                <nav class="flex justify-end flex-1">
+                    <ul class="flex flex-wrap text-blue-700">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About Us.html">About</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li class="last-child"><a href="signup.html" last-child>Sign-up</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="about-section" style="border-radius: 10px; margin: 10px; padding: 10px;">
+                <h1 style="font-size: 22px;"><strong>About Us Page</strong></h1>
+                <p>Some text about who we are and what we do.</p>
+                <p>Resize the browser window to see that this page is responsive by the way.</p>
+                <p>Chop Vault is a virtual food ordering website, which takes your order and deliver to you location. It
+                    is
+                    a major
+                    distributor of food items from Native Kitchen, Vegas Restaurant, Mercury Restaurant & Relaxation
+                    Center,
+                    Munchy
+                    Cruncy
+                    and Eco Chef Restaurant. This service is offers having the interest of students and staff our great
+                    institution at
+                    heart.</p>
+                <br>
+                <p>
+                    Chop vault to eradicates the stress of moving to a distant location only to care for the stomach. It
+                    brings your
+                    favourite dish to your door step It was established during the final week of the DSC Ae-Funai 6 week
+                    program. It is
+                    made
+                    up of a team of 8 developers Lead by James.
+                </p>
+            </div>
+
+            <h2 style="text-align:center; font-size: 20px;"><strong>Meet Our Team Of Developers</strong></h2>
+            <div class="container-4"
+                style="display: flex; background-color: white; width: 100%; margin:auto ; margin-top: 10px; ; border-radius: 10px; padding: 10px;">
+                <div class="investors" style="margin: auto; text-align: center;">
+                    <img src="images/james.jpg" alt="james" width="180px" />
+                    <p>James</p>
+                </div>
+                <div class="investors" style="margin: auto; text-align: center;">
+                    <img src="images/john.jpg" alt="John" width="180px" />
+                    <p>John</p>
+                </div>
+                <div class="investors" style="margin: auto; text-align: center;">
+                    <img src="icons/user.jpg" alt="John" width="180px" />
+                    <p>Stephanie</p>
+                </div>
+                <div class="investors" style="margin: auto; text-align: center;">
+                    <img src="images/favour.jpg" alt="John" width="180px" />
+                    <p>Favour</p>
+                </div>
+                <div class="investors" style="margin: auto; text-align: center;">
+                    <img src="images/lyka.jpg" alt="John" width="180px" />
+                    <p>Lyka</p>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+    <footer
+        style="background-color: white;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); padding: 10px; text-align: center; margin-top: 30px;">
+        <div>
+            <img src="icons/android-icon-36x36.png" style="margin: auto; width: 36px;">
+        </div>
+        <div style="text-align: center; color: black;">
+            <p>
+                &copy;Copyright Chop Vault. All Rights Reserved
+            </p>
+            <p>
+                Powered By Team Vault
+            </p>
+        </div>
+    </footer>
+
+</html>

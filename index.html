@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/app.min.css">
+    <link rel="icon" href="icons/favicon-16x16.png">
     <link rel="preload" as="script" href="js/app.min.js">
     <link rel="stylesheet" href="css/flickity.min.css">
-    <title>Alpha Delicacy</title>
+    <title>Chop Vault</title>
 </head>
 
 <body class="bg-gray-300">
-    <header class="sticky flex items-center justify-between shadow-md bg-gray-50">
-        <div class="logo">Logo</div>
+    <header class="sticky flex items-center justify-between shadow-md bg-white">
+        <div class="logo flex items-center">
+            <img src="icons/android-icon-48x48.png" class="mr-3">
+            <span class="hidden sm:inline">Chop Vault</span>
+        </div>
         <nav class="flex justify-end flex-1">
             <ul class="flex flex-wrap text-blue-700">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Cart</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Login</a></li>
-                <li class="last-child"><a href="#" last-child>Sign-up</a></li>
+                <li><a href="About Us.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="last-child"><a href="signup.html" last-child>Sign-up</a></li>
             </ul>
         </nav>
     </header>
@@ -73,7 +76,7 @@
             <div class="grid grid-cols-1 gap-4">
                 <!-- Menu section -->
                 <div class="menu-section">
-                    <div class="menu-title">Drinks</div>
+                    <div class="menu-title">Soft Drinks</div>
                     <div class="carousel menu-items">
                         <template x-for="drink in drinks">
                             <div x-on:click="showMore(drink.img, drink.desc, drink.name, drink.price)"
@@ -90,6 +93,91 @@
                         </template>
                     </div>
                 </div>
+                <div class="menu-section">
+                    <div class="menu-title">Snacks</div>
+                    <div class="carousel menu-items">
+                        <template x-for="snack in snacks">
+                            <div x-on:click="showMore(snack.img, snack.desc, snack.name, snack.price)"
+                                class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
+                                <div class="image-holder" x-bind:style="`background-image: url(${snack.img});`">
+                                </div>
+                                <div x-text="snack.name" class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
+                                </div>
+                                <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">&#8358;
+                                    <span x-text="snack.price"></span>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                <div class="menu-section">
+                    <div class="menu-title">Soups</div>
+                    <div class="carousel menu-items">
+                        <template x-for="soup in soups">
+                            <div x-on:click="showMore(soup.img, soup.desc, soup.name, soup.price)"
+                                class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
+                                <div class="image-holder" x-bind:style="`background-image: url(${soup.img});`">
+                                </div>
+                                <div x-text="soup.name" class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
+                                </div>
+                                <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">&#8358;
+                                    <span x-text="soup.price"></span>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                <div class="menu-section">
+                    <div class="menu-title">Stews</div>
+                    <div class="carousel menu-items">
+                        <template x-for="stew in stews">
+                            <div x-on:click="showMore(stew.img, stew.desc, stew.name, stew.price)"
+                                class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
+                                <div class="image-holder" x-bind:style="`background-image: url(${stew.img});`">
+                                </div>
+                                <div x-text="stew.name" class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
+                                </div>
+                                <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">&#8358;
+                                    <span x-text="stew.price"></span>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                <div class="menu-section">
+                    <div class="menu-title">Swallows</div>
+                    <div class="carousel menu-items">
+                        <template x-for="swallow in swallows">
+                            <div x-on:click="showMore(swallow.img, swallow.desc, swallow.name, swallow.price)"
+                                class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
+                                <div class="image-holder" x-bind:style="`background-image: url(${swallow.img});`">
+                                </div>
+                                <div x-text="swallow.name" class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
+                                </div>
+                                <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">&#8358;
+                                    <span x-text="swallow.price"></span>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                <div class="menu-section">
+                    <div class="menu-title">Rice, Pasta and Noodles</div>
+                    <div class="carousel menu-items">
+                        <template x-for="grain in grains">
+                            <div x-on:click="showMore(grain.img, grain.desc, grain.name, grain.price)"
+                                class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
+                                <div class="image-holder" x-bind:style="`background-image: url(${grain.img});`">
+                                </div>
+                                <div x-text="grain.name" class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
+                                </div>
+                                <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">&#8358;
+                                    <span x-text="grain.price"></span>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -97,5 +185,18 @@
     <script src="js/flickity.js"></script>
     <script src="js/main.js"></script>
 </body>
-
+<footer style="background-color: white; 
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); padding: 10px;">
+    <div>
+        <img src="icons/android-icon-36x36.png" style="margin: auto; width: 36px;">
+    </div>
+    <div style="text-align: center; color: black;">
+        <p>
+            &copy;Copyright Chop Vault. All Rights Reserved
+        </p>
+        <p>
+            Powered By Team Vault
+        </p>
+    </div>
+</footer>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Login to Chop Vault</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="icons/favicon-16x16.png">
+    <link rel="preload" as="script" href="js/app.min.js">
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+
+  <body class="bg-gray-300">
+    <div class="login-form-container">
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="icons/chop.jpg" alt="alpha_deli" width="90px" class="alpha_deli">
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Phone/Email</b></label>
+          <input type="tel" type="text" placeholder="Enter Phone/Email" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container">
+          <a href="index.html"><button type="button" class="cancelbtn">Cancel</button></a>
+          <span class="psw">Forgot <a href="forgot_pws.html">password?</a>.</span>
+        </div>
+        <center>
+          <p style="padding: 10px; margin: 5px;">Don't have an account?<a href="signup.html"> SignUp </a>to Alpha
+            Delicacies</p>
+        </center>
+      </form>
+    </div>
+  </body>
+
+</html>

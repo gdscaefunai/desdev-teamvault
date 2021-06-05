@@ -7,34 +7,246 @@ function component() {
         focusedPrice: false,
         drinks: [
             {
-                img: 'images/pexels-evg-culture-1187766.jpg',
-                name: 'Sample product 1',
-                price: '500',
-                desc: 'am sample description hdgghgsgsggytgsghssssssssssssssssshhedygsyuuuuuuuuusevtudgsuyzhcuisha98djwpesdncjksdvbsdhv fduvbislv.dsjvdsnlkcds;jcmfjsa;cn.sajkc.sa mcsancsihcbsdhcvdsh jhshshshhhhhhhhhhhhhhhhhhxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz'
+                img: 'images/sprite.png',
+                name: 'Sprite',
+                price: '150',
+                desc: " One quantity is a single 35cl bottle."
             },
             {
-                img: 'images/pexels-thiszun-follow-me-on-ig-fb-1148215.jpg',
-                name: 'Sample product 2',
+                img: 'images/teem.jpg',
+                name: 'Teem',
                 price: '200',
-                desc: 'am sample description'
+                desc: " One quantity is a single 60cl bottle."
             },
             {
-                name: 'Sample product 3',
+                name: 'Maltina',
+                price: '200',
+                img: 'images/MALTINA.jpg',
+                desc: "One quantity is a single 35cl bottle."
+            },
+            {
+                name: 'Fanta',
+                price: '200',
+                img: 'images/Fanta.png',
+                desc: "One quantity is a single 33cl can."
+            },
+            {
+                name: 'Coca cola',
+                price: '200',
+                img: 'images/coca-cola.png',
+                desc: " One quantity is a single 33cl can."
+            },
+            {
+                name: 'Smoov Chapman',
+                price: '200',
+                img: 'images/chapman.jpg',
+                desc: ' One quantity is a single 50cl bottle.'
+            },
+        ],
+        snacks: [
+            {
+                img: 'images/butter-cake.jpg',
+                name: 'Butter Cake',
+                price: '300',
+                desc: " One quantity is a single slice."
+            },
+            {
+                img: 'images/biscuit-cake.jpg',
+                name: 'Biscuit Cake',
+                price: '300',
+                desc: " One quantity is a single slice."
+            },
+            {
+                name: 'Strawberry Ice Cream',
+                price: '500',
+                img: 'images/strawberry.jpg',
+                desc: "One quantity is a single cup."
+            },
+            {
+                name: 'Vanilla Ice Cream',
+                price: '500',
+                img: 'images/vanilla.jpg',
+                desc: "One quantity is a single cup."
+            },
+            {
+                name: 'Chocolate Ice Cream',
+                price: '500',
+                img: 'images/cholcolate.jpg',
+                desc: " One quantity is a single cup."
+            },
+            {
+                name: 'Chicken Pie',
+                price: '300',
+                img: 'images/chicken-pie-1.jpg',
+                desc: ' One quantity is a single pie.'
+            },
+            {
+                name: 'Meat Pie',
+                price: '300',
+                img: 'images/meat-pie.jpg',
+                desc: ' One quantity is a single pie.'
+            },
+            {
+                name: 'Chicken Shawarma',
+                price: '1000',
+                img: 'images/chicken-shawarma.jpg',
+                desc: ' One quantity is a single wrap.'
+            },
+            {
+                name: 'Goat Meat Shawarma',
+                price: '1000',
+                img: 'images/shawarma-goat.jpg',
+                desc: ' One quantity is a single wrap.'
+            },
+            {
+                name: 'Fish Shawarma',
+                price: '1000',
+                img: 'images/fish-shawarma.jpg',
+                desc: ' One quantity is a single wrap.'
+            },
+        ],
+        
+        soups: [
+            {
+                img: 'images/diaspora-vegetable-soup.jpg',
+                name: 'Vegetable Soup',
                 price: '400',
-                img: 'images/pexels-prem-pal-singh-tanwar-602750.jpg',
-                desc: 'am sample description'
+                desc: " One quantity is a single plate."
             },
             {
-                name: 'Sample product 4',
-                price: '600',
-                img: 'images/pexels-artem-beliaikin-2668308.jpg',
-                desc: 'am sample description'
+                img: 'images/best-nigerian-okra-soup-recipe.jpg',
+                name: 'Okra Soup',
+                price: '400',
+                desc: "One quantity is a single plate."
             },
             {
-                name: 'Sample product 5',
-                price: '700',
-                img: 'images/pexels-julia-sakelli-905485.jpg',
-                desc: 'am sample description'
+                name: 'Nsala (White Soup)',
+                price: '400',
+                img: 'images/ofe-nsala.jpg',
+                desc: "One quantity is a single plate."
+            },
+            {
+                name: 'Ofe Owerri',
+                price: '400',
+                img: 'images/ofe-owerri.jpg',
+                desc: "One quantity is a single plate."
+            },
+            {
+                name: 'Oha (Ora Soup)',
+                price: '400',
+                img: 'images/best-ora-soup-oha-soup-recipe.jpg',
+                desc: "One quantity is a single plate."
+            },
+            {
+                name: 'Catfish pepper Soup',
+                price: '400',
+                img: 'images/catfish-pepper-soup.jpg',
+                desc: 'One quantity is a single plate.'
+            },
+        ],
+        
+        stews: [
+            {
+                img: 'images/chicken-stew.jpg',
+                name: 'Chicken Stew',
+                price: '400',
+                desc: " One quantity is a single plate."
+            },
+            {
+                img: 'images/beef-stew.jpg',
+                name: 'Bee Stew',
+                price: '400',
+                desc: " One quantity is a single plate."
+            },
+            {
+                name: 'Turkey',
+                price: '400',
+                img: 'images/turkey-stew.jpg',
+                desc: "One quantity is a single plate."
+            },
+            {
+                name: 'Ofe Akwu (Banga)',
+                price: '400',
+                img: 'images/ofe-akwu.jpg',
+                desc: "One quantity is a single plate."
+            },
+            {
+                name: 'Garden Egg Sauce',
+                price: '400',
+                img: 'images/garden-egg-sauce.jpg',
+                desc: " One quantity is a single plate."
+            },
+        ],
+        
+        swallows: [
+            {
+                img: 'images/garri.jpg',
+                name: 'Eba (Garri)',
+                price: '100',
+                desc: " One quantity is a single wrap."
+            },
+            {
+                img: 'images/fufu.jpg',
+                name: 'Fufu (Akpu)',
+                price: '100',
+                desc: " One quantity is a single wrap."
+            },
+            {
+                name: 'Agidi (White)',
+                price: '100',
+                img: 'images/agidi.jpg',
+                desc: "One quantity is a single wrap."
+            },
+            {
+                name: 'Agidi (Jollof)',
+                price: '100',
+                img: 'images/agidi-jollof.jpg',
+                desc: "One quantity is a single wrap."
+            },
+            {
+                name: 'Boiled yam',
+                price: '300',
+                img: 'images/yam.jpg',
+                desc: "One quantity is 4 piece of Yam."
+            },
+        ],
+        
+        grains: [
+            {
+                img: 'images/LR-jollof-rice',
+                name: 'Jollof Rice',
+                price: '400',
+                desc: " One quantity is a single plate."
+            },
+            {
+                img: 'images/jollof-spaghetti.jpg',
+                name: 'Jollof Spaghetti',
+                price: '400',
+                desc: " One quantity is a single plate."
+            },
+            {
+                name: 'Fried Rice',
+                price: '200',
+                img: 'images/MALTINA.jpg',
+                desc: "One quantity is a single plate."
+            },
+            {
+                name: 'Coconut Rice',
+                price: '400',
+                img: 'images/coconut-rice',
+                desc: "One quantity is a single plate."
+            },
+            {
+                name: 'White Rice',
+                price: '250',
+                img: 'images/white-rice.jpg',
+                desc: " One quantity is a single plate."
+            },
+            {
+                name: 'Noodles',
+                price: '300',
+                img: 'images/indomie-with-boiled-egg.jpg',
+                desc: 'One quantity is a single plate and a single Boiled egg.'
             },
         ],
         showMore: function (img, desc, name, price) {

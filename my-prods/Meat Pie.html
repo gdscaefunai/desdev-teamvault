@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alpha Delicacies/my_prods...emechijam</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;  
+                box-sizing: border-box;             
+            }
+            body{
+                margin: auto;
+                width: 90%;
+                background-color: whitesmoke;
+            }
+            .container{
+                text-align: justify;
+                display: flex;
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border-radius: 10px ;
+                background-color: white;
+                padding: 5px;
+            }
+            .description{
+                display: flex; 
+                width: 100%; 
+                padding: 15px; 
+                margin: auto; 
+                background-color: white;
+            }
+            .add-to-cart {
+                width: 70%;
+            }
+            
+            .btn {
+            border-radius: 5px;
+            border: none;
+            outline: 0;
+            display: inline-block;
+            background-color: #82deee;  
+            padding: 14px 20px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 18px;
+            }
+            .btn:hover {
+            color: white;
+            background-color: #bb86fc;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);  
+            }  
+            .quantity{
+            width: 20%;
+            border-radius: 5px;
+            border: none;
+            outline: 0;
+            display: inline-block;
+            background-color: whitesmoke;  
+            padding: 10px 5px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 18px;
+
+            }
+            .img-container{
+                width: 100%; 
+                margin: auto;
+            }
+            .prod-img{
+                margin: auto;
+                width: 100%;
+                border-radius: 15px;                
+            }
+            @media screen and (max-width:460px) {
+                body{
+                    width: 90%;
+                    margin: auto;
+                }
+                .container{
+                    display: block;
+                    background-color: transparent; 
+                    border: none; 
+                    margin-bottom: 20px;
+                    padding: 10px 12px;                  
+                }
+                .prod-img{
+                    border-radius: 10px;
+                    margin-bottom: 0px;
+                }
+                .description{
+                    margin-top: 2px;
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+            @media screen and (min-width:800px) {
+                .container{
+                    margin-top: 20px;
+                }  
+            }
+
+        </style>   
+
+    </head>
+    <header> 
+    </header>
+    <body >
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/meat-pie.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Meat Pie</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">A meat pie is a pie with a chunky filling of meat and often other savory ingredients. They are popular in Australia and
+                    New Zealand, Canada, Europe and the United Kingdom, Ghana, Nigeria, South Africa, and Zimbabwe.
+                    As with most pies, the pasty is usually baked, fried, or deep fried at a high enough temperature to induce the Maillard
+                    reaction, which changes the colour of the pastry to a golden or brown colour, and greatly increases the pastry's
+                    richness and flavour. Depending on how the pastry is prepared, when cooked the pastry might also acquire a tender, flaky
+                    structure.
+                    It depends upon the talent of the chef to achieve the desired pastry effect while also cooking the internal filling to
+                    achieve food safety at a desired service temperature; meat pies are often served hot, sometimes far too hot to quickly
+                    consume. Tender cuts of meat tend to become tough at higher temperatures, whereas tough cuts of meat with more
+                    connective tissue can become more tender at higher temperatures, so the cooking strategy will often vary depending on
+                    the filling contents. In some cases, it may be necessary to partially precook either the filling or the crust to obtain
+                    the desired balance of effects in the final pie.</p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single pie.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦300</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>

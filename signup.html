@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SignUp to Chop Vault</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="icons/favicon-16x16.png">
+    <link rel="stylesheet" href="css/signup.css">
+    <!--<script src="https://kit.fontawesome.com/adaadafc4d.js" crossorigin="anonymous"></script>
+    <rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+</head>
+<body>
+  <div class="signup-form-container">    
+    <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer" >
+          <img src="icons/chop.jpg" width="90px" class="alpha_deli">
+        </div>
+          <center>Please fill in this form to create an account.</center>
+        <div class="container">
+          <label for="first name"><b>First Name</b></label>
+          <input type="text" placeholder="Enter First Name" name="first name" required>
+
+          <label for="middle name"><b>Middle Name</b></label>
+          <input type="text" placeholder="Enter Middle Nmae" name="middle name">
+
+          <label for="last name"><b>Last Name</b></label>
+          <input type="text" placeholder="Enter Last Name" name="last name">
+          
+          <label for="location"><b>Delivery Address</b></label>
+          <input type="text" placeholder="Enter Location" name="location" required>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+    
+          <label for="phone"><b>Phone</b></label>
+          <input type="tel" placeholder="Enter Phone" name="phnone" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+    
+          <label for="psw-confirm"><b>Confirm Password</b></label>
+          <input type="password" placeholder="Confirm Password" name="psw-confirm" required>
+          
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+        </div>
+  
+        <center class="container">
+          <span>By creating an account you agree to our <a href="terms&conditions.html" style="color:dodgerblue">Terms &
+              Privacy</a>.</span>
+  
+          <div class="clearfix">
+            <button type="submit" class="signupbtn">Sign Up</button>
+            <a href="index.html"><button type="button" class="cancelbtn" style="width: 100%;">Cancel</button></a>
+          </center>
+          <center style="margin-bottom: 20px; padding: 10px; ">
+              <span >Already have an account?<a href="login.html"> Login </a>to Alpha Delicacies</span>
+          </center>
+        </div>
+    </form>
+  </div>
+</body>
+</html>

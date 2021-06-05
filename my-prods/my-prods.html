@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alpha Delicacies/my_prods...emechijam</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;  
+                box-sizing: border-box;             
+            }
+            body{
+                margin: auto;
+                width: 90%;
+                background-color: whitesmoke;
+            }
+            .container{
+                text-align: justify;
+                display: flex;
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border-radius: 10px ;
+                background-color: white;
+                padding: 5px;
+            }
+            .description{
+                display: flex; 
+                width: 100%; 
+                padding: 15px; 
+                margin: auto; 
+                background-color: white;
+            }
+            .add-to-cart {
+                width: 70%;
+            }
+            
+            .btn {
+            border-radius: 5px;
+            border: none;
+            outline: 0;
+            display: inline-block;
+            background-color: #82deee;  
+            padding: 14px 20px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 18px;
+            }
+            .btn:hover {
+            color: white;
+            background-color: #bb86fc;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);  
+            }  
+            .quantity{
+            width: 20%;
+            border-radius: 5px;
+            border: none;
+            outline: 0;
+            display: inline-block;
+            background-color: whitesmoke;  
+            padding: 10px 5px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 18px;
+
+            }
+            .img-container{
+                width: 100%; 
+                margin: auto;
+            }
+            .prod-img{
+                margin: auto;
+                width: 100%;
+                border-radius: 15px;                
+            }
+            @media screen and (max-width:460px) {
+                body{
+                    width: 90%;
+                    margin: auto;
+                }
+                .container{
+                    display: block;
+                    background-color: transparent; 
+                    border: none; 
+                    margin-bottom: 20px;
+                    padding: 10px 12px;                  
+                }
+                .prod-img{
+                    border-radius: 10px;
+                    margin-bottom: 0px;
+                }
+                .description{
+                    margin-top: 2px;
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+            @media screen and (min-width:800px) {
+                .container{
+                    margin-top: 20px;
+                }  
+            }
+
+        </style>   
+
+    </head>
+    <header> 
+    </header>
+    <body >
+        
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/butter cake.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Butter Cake</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p>A butter cake is a cake in which one of the main ingredients is butter. Butter cake is baked with basic ingredients:
+                    butter, sugar, eggs, flour, and leavening agents such as baking powder or baking soda. It is considered as one of the
+                    quintessential cakes in American baking.</p><p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single slice.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦300</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/biscuit cake.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Biscuit Cake</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p>Biscuit cake is a type of no bake tea cake, similar to American icebox cake, found in Irish, English, Danish, Arabic
+                    and Jewish cuisine. It is made with digestive biscuits and is optionally prepared with a chocolate glaze.</p>
+                    <p> In the
+                        tasting, strawberry flavor veered wildly from nonexistent (most) to bubble-gum-sweet to full and bright (very few).
+                        The
+                        dairy background was sometimes round and creamy, often overly tart and icy — probably because of the presence of
+                        strawberry juice in the mixture.</p><p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                            One quantity is a single slice.
+                        </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦300</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/strawberry.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Strawberry Ice Cream</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p>One important benefit of strawberry ice cream is that it provides energy, Ice cream is rich in proteins, carbohydrates,
+                    and fats which when broken down in the body produces energy. Our bodies need all these nutrients to provide energy.
+                    Since ice cream is sugary, it is crucial to be taken in moderation to prevent weight gain among other undesired gains.</p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single cup.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦500</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/vanilla.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Vanilla</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Vanilla has long been the best-selling ice cream flavor not only because it is creamy and delicious, but also because of
+                    its ability to enhance so many other desserts and treats,” said Cary Frye, IDFA vice president of regulatory and
+                    scientific affairs and nationally respected expert on ice cream and frozen desserts.</p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single cup.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦500</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/cholcolate.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: left; padding-left: 20px;">
+                    <div>
+                        <span>
+                            <h3>Cholcolate Ice Cream</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">What are the benefits of chocolate ice cream?
+                        <p>Health Benefits of Ice Cream</p>
+                <ul>
+                    <li>It Is Loaded With Vitamins and Minerals. ...</li><li>It Gives You Energy. ...</li><li></li><li>It Helps Boost Your Immunity. ...</li><li>It Helps in Stimulating Your Brain. ...</li><li>It Helps in Strengthening Your Bones. ...</li><li>It Makes You Happier. ...</li><li>It Increases Your Libido. ...</li><li>It Prevents Breast Cancer.</li>
+                </ul></p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px; text-align: center;">
+                        One quantity is a single cup.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦500</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/chicken-shawarma.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Chicken Shawarma</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Shawarma is a Levantine Arab dish consisting of meat cut into thin slices, stacked in
+                    a cone-like shape, and roasted on a slowly-turning vertical rotisserie or spit. Originally made with lamb, mutton or
+                    chicken, today's shawarma may also be turkey, beef, or veal. Thin slices are shaved off the cooked surface as
+                    it continuously rotates. Shawarma is one of the world's most popular street foods, especially in Turkey, Egypt,
+                    Russia, and Pakistan, as well as the countries of Central Asia, the Levant, Arabian Peninsula, and beyond. Shawarma is
+                    prepared from thin cuts of seasoned marinated lamb, mutton, veal, beef, chicken, or turkey.</p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single wrap.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦1000</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/meat-pie.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Meat Pie</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">A meat pie is a pie with a chunky filling of meat and often other savory ingredients. They are popular in Australia and
+                    New Zealand, Canada, Europe and the United Kingdom, Ghana, Nigeria, South Africa, and Zimbabwe.
+                    As with most pies, the pasty is usually baked, fried, or deep fried at a high enough temperature to induce the Maillard
+                    reaction, which changes the colour of the pastry to a golden or brown colour, and greatly increases the pastry's
+                    richness and flavour. Depending on how the pastry is prepared, when cooked the pastry might also acquire a tender, flaky
+                    structure.
+                    It depends upon the talent of the chef to achieve the desired pastry effect while also cooking the internal filling to
+                    achieve food safety at a desired service temperature; meat pies are often served hot, sometimes far too hot to quickly
+                    consume. Tender cuts of meat tend to become tough at higher temperatures, whereas tough cuts of meat with more
+                    connective tissue can become more tender at higher temperatures, so the cooking strategy will often vary depending on
+                    the filling contents. In some cases, it may be necessary to partially precook either the filling or the crust to obtain
+                    the desired balance of effects in the final pie.</p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single pie.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦300</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/shawarma-goat.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Goat Shawarma</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Shawarma is a Levantine Arab[4] dish consisting of meat cut into thin slices, stacked in
+                    a cone-like shape, and roasted on a slowly-turning vertical rotisserie or spit. Originally made with lamb, mutton or
+                    chicken, today's shawarma may also be turkey, beef, or veal. Thin slices are shaved off the cooked surface as
+                    it continuously rotates. Shawarma is one of the world's most popular street foods, especially in Turkey, Egypt,
+                    Russia, and Pakistan, as well as the countries of Central Asia, the Levant, Arabian Peninsula, and beyond. Shawarma is
+                    prepared from thin cuts of seasoned marinated lamb, mutton, veal, beef, chicken, or turkey.</p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single wrap.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦1000</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/fish-shawarma.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Fish Shawarma</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Shawarma is a Levantine Arab dish consisting of meat cut into thin slices, stacked in
+                    a cone-like shape, and roasted on a slowly-turning vertical rotisserie or spit. Originally made with lamb, mutton or
+                    chicken, today's shawarma may also be turkey, beef, or veal. Thin slices are shaved off the cooked surface as
+                    it continuously rotates. Shawarma is one of the world's most popular street foods, especially in Turkey, Egypt,
+                    Russia, and Pakistan, as well as the countries of Central Asia, the Levant, Arabian Peninsula, and beyond. Shawarma is
+                    prepared from thin cuts of seasoned marinated lamb, mutton, veal, beef, chicken, or turkey.</p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single wrap.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦1000</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/sprite.png" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Sprite</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Sprite doesn't contain caffeine, it may provide a boost of energy and exert effects similar to those of caffeine when
+                    drunk in excess. Sprite is a clear, lemon-lime soda that doesn't contain caffeine but is high in added sugar. Thus,
+                    similarly to caffeine, it may provide a jolt of energy. Sprite is a colorless, lemon and lime-flavored soft drink
+                    created by The Coca-Cola Company. It was first developed in West Germany in 1959 as Fanta Klare Zitrone ("Clear Lemon
+                    Fanta") and was introduced in the United States under the current brand name Sprite in 1961 as a competitor to 7 Up.
+                    Sprite comes in multiple flavours, including cranberry, cherry, grape, orange, and vanilla.</p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single 35cl bottle.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦150</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div><div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/teem.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Teem</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Teem is a lemon-lime-flavored soft drink produced by The Pepsi-Cola Company. It was introduced in 1960 as Pepsi's answer
+                    to 7 Up and Coca-Cola's Sprite.
+                    Bitter Lemon is a lemon-flavored beverage similar to tonic water. ... Lemon is used as a mixer for alcoholic beverages,
+                    but you can also drink it on its own. ... as it is high in calories and does not provide a large degree of nutritional
+                    benefits. Teem is the idle drink for our old parents because of its low sugar content. Medical researches proves it is
+                    good for men as per it enhances sperm production</p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single 60cl bottle.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦200</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/MALTINA.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Maltina</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Maltina is the smooth, nourishing malt drink with complete richness. Launched as a food supplement, Maltina is fortified
+                    with Vitamins and Calcium for healthy families. Maltina remains the category leader with its innovations and message of
+                    sharing happiness. Maltina is the first locally produced Malt Drink in Nigeria and the only Malt Drink endorsed by the
+                    Nutrition Society of Nigeria. A healthy you is a happy you. It is richly packed with essential Vitamins and Minerals
+                    (Vitamin A, B1, B2, B3, B5, B6 and C, including Calcium) to keep your body and mind completely vitalized.                 
+                    
+                    Maltina is the first locally produced Malt Drink in Nigeria and the only Malt Drink endorsed by the Nutrition Society of
+                    Nigeria. A healthy you is a happy you. It is richly packed with essential Vitamins and Minerals (Vitamin A, B1, B2, B3,
+                    B5, B6 and C, including Calcium) to keep your body and mind completely vitalized.
+                    
+                    Maltina is the smooth, nourishing malt drink with complete richness. Launched as a food supplement, Maltina is fortified
+                    with Vitamins and Calcium for healthy families. Maltina remains the category leader with its innovations and message of
+                    sharing happiness.
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single 35cl bottle.
+                    </p>
+</p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦200</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/fanta....jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Fanta</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Bright, bubbly and popular, Fanta is the soft drink that intensifies fun. Introduced in 1940, Fanta is the second oldest
+                    brand of The Coca-Cola Company. Bright, bubbly and popular, Fanta is the soft drink that intensifies fun. Introduced in
+                    1940, Fanta is the second oldest brand of The Coca-Cola Company. Fanta Orange soda has 110 calories. It does not contain
+                    any fat, cholesterol, protein or fiber, and only has 35 milligrams of sodium. The total amount of carbohydrates in this
+                    beverage is 30 grams, which come exclusively from sugar. The soda does not contain any vitamins or minerals. It does not
+                    contain caffeine.
+                    </p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single 33cl can.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦200</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/coca cola.png" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Coca Cola</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Coca-Cola, or Coke, is a carbonated soft drink manufactured by The Coca-Cola Company. Originally marketed as a
+                    temperance drink and intended as a patent medicine, it was invented in the late 19th centuryWhether you’re enjoying the
+                    refreshing taste of Coca Cola Original Taste or Zero Sugar, drinking Coca Cola is a simple pleasure that makes everyday
+                    moments more special.
+                    </p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single 33cl can.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦200</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/diaspora-vegetable-soup.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: left; padding-left: 20px;">
+                    <div>
+                        <span>
+                            <h3>Vegetable Soup</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Nutritional Benefits Of Veg Soup:
+                    <ul>
+                        <li>Aids In Weight Loss.</li><li></li><li>Promotes Digestion.</li><li>Rich Source of Fluids.</li><li>Powerhouse Of Antioxidants.</li><li>Strengthens Bones.</li><li>Preserves Nutrition Of Veggies.</li><li>Promotes Cardiac Functioning.</li>
+                    </ul>
+                    </p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px; text-align: center;">
+                        One quantity is a single plate.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦400</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/chapman.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Smoov Chapman</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">A Chapman is a non-alcoholic drink, usually red in colour. Sometimes referred to as a non-alcoholic punch, it is
+                    traditionally made with a mix of Fanta, Sprite, Cucumber, Lemon, Grenadine and Angostura bitters and is traditionally
+                    served in a large mug with ice and a few slices of cucumber.
+                    </p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single 50cl bottle.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦200</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+         <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/best-nigerian-okra-soup-recipe.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: left; padding-left: 20px;">
+                    <div>
+                        <span>
+                            <h3>Okra Soup</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">7 Nutrition and Health Benefits of Okra:
+                    <ul>
+                        <li>Rich in nutrients. Okra boasts an impressive nutrient profile. ...</li>
+                        <li></li>
+                        <li>Contains beneficial antioxidants. Okra packs many antioxidants that benefit your health. ...</li>
+                        <li>May lower heart disease risk. ...</li>
+                        <li>May have anticancer properties. ...</li>
+                        <li>May lower blood sugar. ...</li>
+                        <li>Beneficial for pregnant women. ...</li>
+                        <li>Easy to add to your diet.</li>
+                    </ul>
+                    </p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px; text-align: center;">
+                        One quantity is a single plate.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦400</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+         <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/ofe-owerri.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Ofe Owerri</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Ofe Owerri has got so many health advantages. Ugwu (pumpkin) leaf is known to be highly rich in iron and calcium. It's
+                    said that this vegetable has great antioxidant capacities, helping to restore any damage to our cells and skin,
+                    protecting our heart and enhancing youth. Cocoyam is also a good source of Vitamins.</p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single plate.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦400</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/ofe-nsala.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: left; padding-left: 20px;">
+                    <div>
+                        <span>
+                            <h3>Nsala Soup(White Soup)</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">5 Health Benefits Of Eating Ofe Nsala (White Soup):
+                    <ul>
+                        <li>Immunity booster. Ofe Nsala contains properties that helps in developing the body's immune system. ...</li>
+                        <li>It has also proven to be helpful for women who just went through pregnancy. ...</li>
+                        <li>It is spicy and can help drive away cough and catarrh.</li>
+                        <li>Contains omega-3 fatty acid.</li>
+                        <li>Contains vitamin E and C.</li>
+                    </ul>
+                    </p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px; text-align: center;">
+                        One quantity is a single plate.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦400</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/catfish pepper soup.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: left; padding-left: 20px;">
+                    <div>
+                        <span>
+                            <h3>Catfish Pepper Soup</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Top 5 Benefits Of Eating Catfish Pepper Soup:
+                        <ul>
+                            <li>Good For The Muscles. With the protein catfish contains, it is a great meal and wonderful source of amino acids
+                                for
+                                your body. ...</li>
+                            <li>Protection Of The Heart. ...</li>
+                            <li>Good For Pregnant Women. ....</li>
+                            <li>Healthier Eyes. ...</li>
+                            <li>Treatment Of Sleeping Disorder.</li>
+                        </ul>
+
+                    </p>
+                    </p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px; text-align: center;">
+                        One quantity is a single plate.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦500</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/best-ora-soup-oha-soup-recipe.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Ora Soup</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Well prepared ora soup makes digestion easy. The dietary fiber found in it helps to improve the digestive function,
+                    explore and absorb the nutrient well. It prevents constipationThis fiber helps to digest the food well, so the food
+                    residue can be pushed out of the body easily. It regulates the blood glucose levels
+                    </p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single plate.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦500</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/chicken-stew.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Chicken Stew</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Chicken broth is rich with essential fatty acids and protein. Both help your body build and repair healthy muscle, bone,
+                    skin, and blood cells. Chicken broth is also a rich source of minerals like iron.
+                    
+                    Chicken broth is rich with essential fatty acids and protein. Both help your body build and repair healthy muscle, bone,
+                    skin, and blood cells. Chicken broth is also a rich source of minerals like iron.
+                    </p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single plate.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦400</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+         <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/beef-stew.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: left; padding-left: 20px;">
+                    <div>
+                        <span>
+                            <h3>Beef Stew</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">11 health benefits of eating beef:
+                    <ul>
+                        <li>Beef Provides a Large Source of L-Carnitine. ...</li>
+                        <li>Beef Provides the “Master Antioxidant” Glutathione. ...</li>
+                        <li>Beef is Extremely Rich in Minerals. ....</li>
+                        <li>Eating Beef Helps Prevent Iron Deficiency Anemia. ...</li>
+                        <li>Eating Beef Helps Prevent Iron Deficiency Anemia. ...</li>
+                        <li>Beef is Full of Vitamins.</li>
+                    </ul>
+                    </p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px; text-align: center;">
+                        One quantity is a single plate.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦400</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+         <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/turkey-stew.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Turkey Stew</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Turkey meat health benefits
+                    Turkey is a very rich source of protein, niacin, vitamin B6 and the amino acid tryptothan. Apart from these nutrients,
+                    it is also contains zinc and vitamin B12. The skinless white meat of turkey is low on fat and is an excellent source of
+                    high protein. Turkey also contains anti-cancer properties.</p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single plate.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦400</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/ofe-akwu.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: left; padding-left: 20px;">
+                    <div>
+                        <span>
+                            <h3>Ofe Akwu (Banga)</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Nutritional benefits of Banga Soup:
+                    <ul>
+                        <li>is essential for building strong bones.</li>
+                        <li>prevents heart disease.</li>
+                        <li>prevents Cancer risk.</li>
+                        <li>improves Vision.</li>
+                        <li>reduces the effect of premenstrual syndrome symptoms such as insomnia, weight gain, bloating, leg swelling and breast
+                        tenderness.</li>
+                        <li>nourishes the human skin and hair.</li>
+                    </ul>
+                    </p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px; text-align: center;">
+                        One quantity is a single plate.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦400</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/garden egg sauce.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Garden Egg Sauce</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Rich in flavonoids, garden eggs help to promote heart health and reduce the risk of high blood pressure. Garden eggs are
+                    low in calories and can contribute to a healthy low-calorie diet. It is also rich in fibre which can help increase
+                    satisfaction and reduce appetite.
+                    </p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single plate of Yam and Egg Sauce.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦700</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div> <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/eba(garri).jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Eba (Garri)</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">What is the nutritional value of Gari?
+                    Like other members of Araceae family, it grows from the fleshy tuber, which is used majorly for food, and it supplies
+                    digestible starch, substantial amount of protein, vitamin C, riboflavin, thiamine, niacin, and significant amount of
+                    dietary fiber that is richer than cassava tuber.</p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single wrap.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦100</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+         <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/agidi.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Agidi</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">From the nutritional value of Agidi or Eko, we can see that it is packed with some important nutrients. Now let’s find
+                    out some of the health benefits of agidi based in it nutrient composition. Good for Eye Health
+                    Remember. Good for weight loss. Improves digestive health.. Healthy food for toddlers. Healthy food for pregnant women
+                    <h5>Bottom Line</h5>
+                   Agidi or Eko is a popular food in Nigeria. It contains so many important vitamins and minerals. The health benefits of
+                    agidi include it’s the ability to improve eye health, aid weight loss, and improve digestive health</p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single wrap.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦100</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+         <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/fufu.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Fufu (Akpu)</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">It is rich in carbohydrates and minerals. The Nigerian Civil War (1967-1970) caused large-scale outbreaks of nutritional
+                    diseases such as kwashiorkor and beriberi as fierce battles in areas including cassava fields crippled farming
+                    activities.</p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single wrap.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦100</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/agidi jollof.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Agidi Jollof</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">From the nutritional value of Agidi or Eko, we can see that it is packed with some
+                        important nutrients. Now let’s find
+                        out some of the health benefits of agidi based in it nutrient composition. Good for Eye Health
+                        Remember. Good for weight loss. Improves digestive health.. Healthy food for toddlers. Healthy food for pregnant
+                        women
+                    <h5>Bottom Line</h5>
+                    Agidi or Eko is a popular food in Nigeria. It contains so many important vitamins and minerals. The health benefits of
+                    agidi include it’s the ability to improve eye health, aid weight loss, and improve digestive health</p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a single wrap.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦100</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div><div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/yam2.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: left; padding-left: 20px;">
+                    <div>
+                        <span>
+                            <h3>Boiled Yam</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Here are 11 health and nutrition benefits of yams:
+                    <ul>
+                        <li>Packed with nutrition. Yams are rich in vitamins, minerals, and fiber. ...</li>
+                        <li>May enhance brain function. ...</li>
+                        <li>May ease symptoms of menopause. ...</li>
+                        <li>May have cancer-fighting properties. ...</li>
+                        <li>May reduce inflammation. ...</li>
+                        <li>May improve blood sugar control. ...</li><li>Easy to add to your diet.
+</li>
+                    </ul>
+                    </p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px; text-align: center;">
+                        One quantity is a 4 piece.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦300</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/LR-jollof-rice.jpeg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: left; padding-left: 20px;">
+                    <div>
+                        <span>
+                            <h3>Jollof Rice</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Five Health Benefits of Jollof Rice:
+                    <ul>
+                        <li>Jollof Rice makes you happy. ...</li>
+                        <li>May enhance brain function. ...</li>
+                        <li>Jollof Rice strengthens family and friendship bonds. ...</li>
+                        <li>Jollof Rice strengthens national bonds. ...</li>
+                        <li>Jollof Rice brings back good memories, very key to good mental health.</li>
+                    </p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px; text-align: center;">
+                        One quantity is a a plate of Rice.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦400</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/Jollof-spaghetti.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: left; padding-left: 20px;">
+                    <div>
+                        <span>
+                            <h3>Jollof Pasta</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Pasta also offers:
+                    <ul>
+                        <li>Sustained Energy: Carbohydrates like pasta provide glucose, the crucial fuel for your brain and muscles. ...</li>
+                        <li>Low Sodium and Cholesterol Free: If you're watching your cholesterol levels, pasta is perfect for you, being very low
+                        in sodium and cholesterol free. ...</li>
+                        <li>Folic Acid: ....</li>
+                        <li>Balanced Diet:</li>
+                        </p>
+                        <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px; text-align: center;">
+                            One quantity is a a plate of Pasta.
+                        </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦400</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/fried rice.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: left; padding-left: 20px;">
+                    <div>
+                        <span>
+                            <h3>Fried Rice</h3>
+                        </span>
+                    </div>
+                    <hr><p style="margin-bottom: 10px;">Five Health Benefits of Fried Rice:
+                    <ul>
+                        <li>Fried Rice makes you happy. ...</li>
+                        <li>May enhance brain function. ...</li>
+                        <li>Fried Rice strengthens family and friendship bonds. ...</li>
+                        <li>Fried Rice strengthens national bonds. ...</li>
+                        <li>Fried Rice brings back good memories, very key to good mental health.</li>
+                        </p>
+                        <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px; text-align: center;">
+                            One quantity is a a plate of Fried Rice.
+                        </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦400</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+         <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/coconut-rice.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: left; padding-left: 20px;">
+                    <div>
+                        <span>
+                            <h3>Coconut Rice</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">Five Health Benefits of Coconut Rice:
+                    <ul>
+                        <li>Jollof Rice makes you happy. ...</li>
+                        <li>May enhance brain function. ...</li>
+                        <li>Jollof Rice strengthens family and friendship bonds. ...</li>
+                        <li>Jollof Rice strengthens national bonds. ...</li>
+                        <li>Jollof Rice brings back good memories, very key to good mental health.</li>
+                        </p>
+                        <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px; text-align: center;">
+                            One quantity is a a plate of Coconut Rice.
+                        </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦400</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/white-rice.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: left; padding-left: 20px;">
+                    <div>
+                        <span>
+                            <h3>White Rice</h3>
+                        </span>
+                    </div>
+                    <hr><p style="margin-bottom: 10px;">Five Health Benefits of White Rice:
+                    <ul>
+                        <li>White Rice makes you happy. ...</li>
+                        <li>May enhance brain function. ...</li>
+                        <li>White Rice strengthens family and friendship bonds. ...</li>
+                        <li>White Rice strengthens national bonds. ...</li>
+                        <li>White Rice brings back good memories, very key to good mental health.</li>
+                        </p>
+                        <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;  text-align: center;">
+                            One quantity is a a plate of White Rice.
+                        </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦100</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="prod-img" src="images/indomie-with-boiled-egg.jpg" width="100%">
+            </div>
+            <div class="description">
+                <div style="text-align: center;">
+                    <div>
+                        <span>
+                            <h3>Noodles</h3>
+                        </span>
+                    </div>
+                    <hr>
+                    <p style="margin-bottom: 10px;">
+                        <h5>Nutrition content</h5>
+                    Basically, instant noodles are made up of salt, wheat flour and water. The micro nutrients differ according to various
+                    brands of instant noodles. Withal, instant noodles have low calories, protein, fiber, mineral and vitamins.               
+                    <h5>Essential nutrients</h5>                    
+                    Some instant noodles provide essential nutrients to the body. The nutrients in instant noodles differ according to
+                    brands. Some brands include manganese and Vitamin B complex such as thiamine and riboflavin. Literally the study shows
+                    that more than 6000 instant noodle consumers showed 31% and 16% greater intake of thiamine and riboflavin respectively.
+                     <h5>Low carbs</h5>
+                    Rice noodles offers 44 grams of carbs per cup. It has higher glycemic index which means body breaks it down into sugar
+                    quickly.
+                     Full for longer
+                    One bowl of instant noodles keeps one full for longer time period as it takes time to get digested.
+                    </p>
+                    <p style="margin-bottom: 10px; color: #bb86fc;font-size: 18px;">
+                        One quantity is a a plate of Noodle and Boiled Egg.
+                    </p>
+                    <div style="background-color: whitesmoke;width: fit-content; margin: auto; font-size: 20px; border-radius:5px; padding: 10px 12px;">₦400</div>
+                    <span style="width:100%; margin:auto; align-content: space-between; ">
+                        <button class="add-to-cart btn">Add To Cart</button>
+                        <input type="number" min="1" max="100" placeholder="1" class="quantity">
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </body>
