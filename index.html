@@ -1,202 +1,215 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/app.min.css">
-    <link rel="icon" href="icons/favicon-16x16.png">
-    <link rel="preload" as="script" href="js/app.min.js">
-    <link rel="stylesheet" href="css/flickity.min.css">
-    <title>Chop Vault</title>
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.min.css">
+        <link rel="stylesheet" href="css/app.min.css">
+        <link rel="icon" href="icons/favicon-16x16.png">
+        <link rel="preload" as="script" href="js/app.min.js">
+        <link rel="stylesheet" href="css/flickity.min.css">
+        <title>Chop Vault</title>
+    </head>
 
-<body class="bg-gray-300">
-    <header class="sticky flex items-center justify-between shadow-md bg-white">
-        <div class="logo flex items-center">
-            <img src="icons/android-icon-48x48.png" class="mr-3">
-            <span class="hidden sm:inline">Chop Vault</span>
-        </div>
-        <nav class="flex justify-end flex-1">
-            <ul class="flex flex-wrap text-blue-700">
-                <li><a href="#">Home</a></li>
-                <li><a href="About Us.html">About</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li class="last-child"><a href="signup.html" last-child>Sign-up</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div x-data="component()" x-init="initialize" x-cloak>
-            <!-- Modal Background -->
-            <div x-show="showModal"
-                class="fixed top-0 bottom-0 left-0 right-0 z-50 flex items-center justify-center overflow-auto text-gray-500 bg-black bg-opacity-40"
-                x-transition:enter="transition ease duration-300" x-transition:enter-start="opacity-0"
-                x-transition:enter-end="opacity-100" x-transition:leave="transition ease duration-300"
-                x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
-                <!-- Modal -->
-                <div x-show="showModal" class="w-full p-6 bg-white shadow-2xl sm:mx-10 rounded-xl sm:w-10/12"
-                    @click.away="showModal = false" x-transition:enter="transition ease duration-100 transform"
-                    x-transition:enter-start="opacity-0 scale-90 translate-y-1"
-                    x-transition:enter-end="opacity-100 scale-100 translate-y-0"
-                    x-transition:leave="transition ease duration-100 transform"
-                    x-transition:leave-start="opacity-100 scale-100 translate-y-0"
-                    x-transition:leave-end="opacity-0 scale-90 translate-y-1">
-                    <div id="modal">
-                        <!-- Title -->
-                        <span x-text="focusedName" class="block mb-3 text-2xl font-bold"></span>
-                        <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
-                            <div class="col-span-1 mb-4 sm:mr-4 sm:mb-0">
-                                <img x-bind:src="focusedImage" class="max-w-full max-h-48 sm:max-h-72 md:max-h-80">
-                            </div>
-                            <div class="sm:col-span-2">
-                                <div x-text="focusedDescription"
-                                    class="p-3 font-bold text-gray-700 break-words bg-gray-100">
+    <body class="bg-gray-300">
+        <header class="sticky flex items-center justify-between shadow-md bg-white">
+            <div class="logo flex items-center">
+                <img src="icons/android-icon-48x48.png" class="mr-3">
+                <span class="hidden sm:inline">Chop Vault</span>
+            </div>
+            <nav class="flex justify-end flex-1">
+                <ul class="flex flex-wrap text-blue-700">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="About Us.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li class="last-child"><a href="signup.html" last-child>Sign-up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div x-data="component()" x-init="initialize" x-cloak>
+                <!-- Modal Background -->
+                <div x-show="showModal"
+                    class="fixed top-0 bottom-0 left-0 right-0 z-50 flex items-center justify-center overflow-auto text-gray-500 bg-black bg-opacity-40"
+                    x-transition:enter="transition ease duration-300" x-transition:enter-start="opacity-0"
+                    x-transition:enter-end="opacity-100" x-transition:leave="transition ease duration-300"
+                    x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+                    <!-- Modal -->
+                    <div x-show="showModal" class="w-full p-6 bg-white shadow-2xl sm:mx-10 rounded-xl sm:w-10/12"
+                        @click.away="showModal = false" x-transition:enter="transition ease duration-100 transform"
+                        x-transition:enter-start="opacity-0 scale-90 translate-y-1"
+                        x-transition:enter-end="opacity-100 scale-100 translate-y-0"
+                        x-transition:leave="transition ease duration-100 transform"
+                        x-transition:leave-start="opacity-100 scale-100 translate-y-0"
+                        x-transition:leave-end="opacity-0 scale-90 translate-y-1">
+                        <div id="modal">
+                            <!-- Title -->
+                            <span x-text="focusedName" class="block mb-3 text-2xl font-bold"></span>
+                            <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+                                <div class="col-span-1 mb-4 sm:mr-4 sm:mb-0">
+                                    <img x-bind:src="focusedImage" class="max-w-full max-h-48 sm:max-h-72 md:max-h-80">
                                 </div>
-                                <div class="mt-4 text-2xl font-bold text-blue-700">&#8358;
-                                    <span x-text="focusedPrice"></span>
-                                </div>
-                                <div class="flex items-baseline mt-4">
-                                    <input type="number" value="1" min="1" max="100" class="mr-4 sm:w-1/12 form-input">
-                                    <button
-                                        class="px-4 py-2 font-bold text-white bg-blue-800 rounded hover:bg-blue-600">
-                                        Add to cart
-                                    </button>
+                                <div class="sm:col-span-2">
+                                    <div x-text="focusedDescription"
+                                        class="p-3 font-bold text-gray-700 break-words bg-gray-100">
+                                    </div>
+                                    <div class="mt-4 text-2xl font-bold text-blue-700">&#8358;
+                                        <span x-text="focusedPrice"></span>
+                                    </div>
+                                    <div class="flex items-baseline mt-4">
+                                        <input type="number" value="1" min="1" max="100"
+                                            class="mr-4 sm:w-1/12 form-input">
+                                        <button
+                                            class="px-4 py-2 font-bold text-white bg-blue-800 rounded hover:bg-blue-600">
+                                            Add to cart
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Buttons -->
+                        <div class="mt-5 space-x-5 text-right">
+                            <button @click="showModal = !showModal"
+                                class="px-4 py-2 text-sm font-bold text-red-500 transition-colors duration-150 ease-linear bg-white border border-red-500 rounded-xl focus:outline-none focus:ring-0 hover:bg-gray-50 focus:bg-indigo-50 focus:text-indigo">Close</button>
+                        </div>
                     </div>
-                    <!-- Buttons -->
-                    <div class="mt-5 space-x-5 text-right">
-                        <button @click="showModal = !showModal"
-                            class="px-4 py-2 text-sm font-bold text-red-500 transition-colors duration-150 ease-linear bg-white border border-red-500 rounded-xl focus:outline-none focus:ring-0 hover:bg-gray-50 focus:bg-indigo-50 focus:text-indigo">Close</button>
+                </div>
+                <div class="grid grid-cols-1 gap-4">
+                    <!-- Menu section -->
+                    <div class="menu-section">
+                        <div class="menu-title">Soft Drinks</div>
+                        <div class="carousel menu-items">
+                            <template x-for="drink in drinks">
+                                <div x-on:click="showMore(drink.img, drink.desc, drink.name, drink.price)"
+                                    class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
+                                    <div class="image-holder" x-bind:style="`background-image: url(${drink.img});`">
+                                    </div>
+                                    <div x-text="drink.name"
+                                        class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
+                                    </div>
+                                    <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">
+                                        &#8358;
+                                        <span x-text="drink.price"></span>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                    <div class="menu-section">
+                        <div class="menu-title">Snacks</div>
+                        <div class="carousel menu-items">
+                            <template x-for="snack in snacks">
+                                <div x-on:click="showMore(snack.img, snack.desc, snack.name, snack.price)"
+                                    class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
+                                    <div class="image-holder" x-bind:style="`background-image: url(${snack.img});`">
+                                    </div>
+                                    <div x-text="snack.name"
+                                        class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
+                                    </div>
+                                    <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">
+                                        &#8358;
+                                        <span x-text="snack.price"></span>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                    <div class="menu-section">
+                        <div class="menu-title">Soups</div>
+                        <div class="carousel menu-items">
+                            <template x-for="soup in soups">
+                                <div x-on:click="showMore(soup.img, soup.desc, soup.name, soup.price)"
+                                    class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
+                                    <div class="image-holder" x-bind:style="`background-image: url(${soup.img});`">
+                                    </div>
+                                    <div x-text="soup.name"
+                                        class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
+                                    </div>
+                                    <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">
+                                        &#8358;
+                                        <span x-text="soup.price"></span>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                    <div class="menu-section">
+                        <div class="menu-title">Stews</div>
+                        <div class="carousel menu-items">
+                            <template x-for="stew in stews">
+                                <div x-on:click="showMore(stew.img, stew.desc, stew.name, stew.price)"
+                                    class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
+                                    <div class="image-holder" x-bind:style="`background-image: url(${stew.img});`">
+                                    </div>
+                                    <div x-text="stew.name"
+                                        class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
+                                    </div>
+                                    <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">
+                                        &#8358;
+                                        <span x-text="stew.price"></span>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                    <div class="menu-section">
+                        <div class="menu-title">Swallows</div>
+                        <div class="carousel menu-items">
+                            <template x-for="swallow in swallows">
+                                <div x-on:click="showMore(swallow.img, swallow.desc, swallow.name, swallow.price)"
+                                    class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
+                                    <div class="image-holder" x-bind:style="`background-image: url(${swallow.img});`">
+                                    </div>
+                                    <div x-text="swallow.name"
+                                        class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
+                                    </div>
+                                    <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">
+                                        &#8358;
+                                        <span x-text="swallow.price"></span>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                    <div class="menu-section">
+                        <div class="menu-title">Rice, Pasta and Noodles</div>
+                        <div class="carousel menu-items">
+                            <template x-for="grain in grains">
+                                <div x-on:click="showMore(grain.img, grain.desc, grain.name, grain.price)"
+                                    class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
+                                    <div class="image-holder" x-bind:style="`background-image: url(${grain.img});`">
+                                    </div>
+                                    <div x-text="grain.name"
+                                        class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
+                                    </div>
+                                    <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">
+                                        &#8358;
+                                        <span x-text="grain.price"></span>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-1 gap-4">
-                <!-- Menu section -->
-                <div class="menu-section">
-                    <div class="menu-title">Soft Drinks</div>
-                    <div class="carousel menu-items">
-                        <template x-for="drink in drinks">
-                            <div x-on:click="showMore(drink.img, drink.desc, drink.name, drink.price)"
-                                class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
-                                <div class="image-holder" x-bind:style="`background-image: url(${drink.img});`">
-                                </div>
-                                <div x-text="drink.name"
-                                    class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
-                                </div>
-                                <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">&#8358;
-                                    <span x-text="drink.price"></span>
-                                </div>
-                            </div>
-                        </template>
-                    </div>
-                </div>
-                <div class="menu-section">
-                    <div class="menu-title">Snacks</div>
-                    <div class="carousel menu-items">
-                        <template x-for="snack in snacks">
-                            <div x-on:click="showMore(snack.img, snack.desc, snack.name, snack.price)"
-                                class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
-                                <div class="image-holder" x-bind:style="`background-image: url(${snack.img});`">
-                                </div>
-                                <div x-text="snack.name" class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
-                                </div>
-                                <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">&#8358;
-                                    <span x-text="snack.price"></span>
-                                </div>
-                            </div>
-                        </template>
-                    </div>
-                </div>
-                <div class="menu-section">
-                    <div class="menu-title">Soups</div>
-                    <div class="carousel menu-items">
-                        <template x-for="soup in soups">
-                            <div x-on:click="showMore(soup.img, soup.desc, soup.name, soup.price)"
-                                class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
-                                <div class="image-holder" x-bind:style="`background-image: url(${soup.img});`">
-                                </div>
-                                <div x-text="soup.name" class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
-                                </div>
-                                <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">&#8358;
-                                    <span x-text="soup.price"></span>
-                                </div>
-                            </div>
-                        </template>
-                    </div>
-                </div>
-                <div class="menu-section">
-                    <div class="menu-title">Stews</div>
-                    <div class="carousel menu-items">
-                        <template x-for="stew in stews">
-                            <div x-on:click="showMore(stew.img, stew.desc, stew.name, stew.price)"
-                                class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
-                                <div class="image-holder" x-bind:style="`background-image: url(${stew.img});`">
-                                </div>
-                                <div x-text="stew.name" class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
-                                </div>
-                                <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">&#8358;
-                                    <span x-text="stew.price"></span>
-                                </div>
-                            </div>
-                        </template>
-                    </div>
-                </div>
-                <div class="menu-section">
-                    <div class="menu-title">Swallows</div>
-                    <div class="carousel menu-items">
-                        <template x-for="swallow in swallows">
-                            <div x-on:click="showMore(swallow.img, swallow.desc, swallow.name, swallow.price)"
-                                class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
-                                <div class="image-holder" x-bind:style="`background-image: url(${swallow.img});`">
-                                </div>
-                                <div x-text="swallow.name" class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
-                                </div>
-                                <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">&#8358;
-                                    <span x-text="swallow.price"></span>
-                                </div>
-                            </div>
-                        </template>
-                    </div>
-                </div>
-                <div class="menu-section">
-                    <div class="menu-title">Rice, Pasta and Noodles</div>
-                    <div class="carousel menu-items">
-                        <template x-for="grain in grains">
-                            <div x-on:click="showMore(grain.img, grain.desc, grain.name, grain.price)"
-                                class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
-                                <div class="image-holder" x-bind:style="`background-image: url(${grain.img});`">
-                                </div>
-                                <div x-text="grain.name" class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
-                                </div>
-                                <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price">&#8358;
-                                    <span x-text="grain.price"></span>
-                                </div>
-                            </div>
-                        </template>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <script src="js/app.min.js"></script>
-    <script src="js/flickity.js"></script>
-    <script src="js/main.js"></script>
-</body>
-<footer style="background-color: white; 
+        </main>
+        <script src="js/app.min.js"></script>
+        <script src="js/flickity.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+    <footer style="background-color: white; 
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); padding: 10px; margin-top: 10px;">
-    <div>
-        <img src="icons/android-icon-36x36.png" style="margin: auto; width: 36px;">
-    </div>
-    <div style="text-align: center; color: black;">
-        <p>
-            &copy;Copyright Chop Vault. All Rights Reserved
-        </p>
-        <p>
-            Powered By Team Vault
-        </p>
-    </div>
-</footer>
+        <div>
+            <img src="icons/android-icon-36x36.png" style="margin: auto; width: 36px;">
+        </div>
+        <div style="text-align: center; color: black;">
+            <p>
+                &copy;Copyright Chop Vault. All Rights Reserved
+            </p>
+            <p>
+                Powered By Team Vault
+            </p>
+        </div>
+    </footer>
+
 </html>
