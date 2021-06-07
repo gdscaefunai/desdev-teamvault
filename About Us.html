@@ -8,12 +8,11 @@
         <link rel="icon" href="icons/favicon-16x16.png">
         <link rel="preload" as="script" href="js/app.min.js">
         <link rel="stylesheet" href="css/flickity.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>About Us</title>
         <style>
             body {
                 background-color: whitesmoke;
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: 'Courier New', Courier, monospace;
                 margin: 0;
             }
 
@@ -116,8 +115,7 @@
             figcaption {
                 text-transform: uppercase;
                 font-size: 16px bold;
-                font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-                    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+                font-family: 'Courier New', Courier, monospace;
                 margin-top: 27px;
                 margin-bottom: 46px;
             }
@@ -128,78 +126,92 @@
             }
         </style>
     </head>
+    <header class="sticky flex items-center justify-between shadow-md bg-white">
+        <div class="logo flex items-center">
+            <img src="icons/android-icon-48x48.png" class="mr-3">
+            <span class="hidden sm:inline">Chop Vault</span>
+        </div>
+        <nav class="flex justify-end flex-1">
+            <ul class="flex flex-wrap text-blue-700">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="last-child"><a href="signup.html" last-child>Sign-up</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <body>
-        <div style="margin: 20px;">
-            <header class="sticky flex items-center justify-between shadow-md bg-white">
-                <div class="logo flex items-center">
-                    <img src="icons/android-icon-48x48.png" class="mr-3">
-                    <span class="hidden sm:inline">Chop Vault</span>
+        <div class="about-section" style="border-radius: 10px; margin: 10px; padding: 10px;">
+            <h1 style="font-size: 22px;"><strong>About Us Page</strong></h1>
+            <p>Chop Vault is a virtual food ordering website, which takes your order and deliver to you location. It
+                is
+                a major
+                distributor of food items from Native Kitchen, Vegas Restaurant, Mercury Restaurant & Relaxation
+                Center,
+                Munchy
+                Cruncy
+                and Eco Chef Restaurant. This service is offers having the interest of students and staff our great
+                institution at
+                heart.</p>
+            <br>
+            <p>
+                Chop vault to eradicates the stress of moving to a distant location only to care for the stomach. It
+                brings your
+                favourite dish to your door step It was established during the final week of the DSC Ae-Funai 6 week
+                program. It is
+                made
+                up of a team of 8 developers Lead by James.
+            </p>
+        </div>
+        <div x-data="component()" x-init="initialize" x-cloak>
+            <div class="grid grid-cols-1 gap-4">
+                <!-- Meet Our Team -->
+                <div class="team-section">
+                    <div class="menu-title" style="text-align:center; font-size: 20px;"><strong>Meet Our Team Of
+                            Developers</strong></div>
+                    <div class="carousel menu-items">
+                        <template x-for="member in members">
+                            <div class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
+                                <div class="image-holder" x-bind:style="`background-image: url(${member.img});`">
+                                </div>
+                                <div x-text="member.name"
+                                    class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
+                                </div>
+                                <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price"> <span
+                                        x-text="member.post"></span>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
                 </div>
-                <nav class="flex justify-end flex-1">
-                    <ul class="flex flex-wrap text-blue-700">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="About Us.html">About</a></li>
-                        <li><a href="login.html">Login</a></li>
-                        <li class="last-child"><a href="signup.html" last-child>Sign-up</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="about-section" style="border-radius: 10px; margin: 10px; padding: 10px;">
-                <h1 style="font-size: 22px;"><strong>About Us Page</strong></h1>
-                <p>Some text about who we are and what we do.</p>
-                <p>Resize the browser window to see that this page is responsive by the way.</p>
-                <p>Chop Vault is a virtual food ordering website, which takes your order and deliver to you location. It
-                    is
-                    a major
-                    distributor of food items from Native Kitchen, Vegas Restaurant, Mercury Restaurant & Relaxation
-                    Center,
-                    Munchy
-                    Cruncy
-                    and Eco Chef Restaurant. This service is offers having the interest of students and staff our great
-                    institution at
-                    heart.</p>
-                <br>
-                <p>
-                    Chop vault to eradicates the stress of moving to a distant location only to care for the stomach. It
-                    brings your
-                    favourite dish to your door step It was established during the final week of the DSC Ae-Funai 6 week
-                    program. It is
-                    made
-                    up of a team of 8 developers Lead by James.
-                </p>
-            </div>
-
-            <h2 style="text-align:center; font-size: 20px;"><strong>Meet Our Team Of Developers</strong></h2>
-            <div class="container-4"
-                style="display: flex; background-color: white; width: 100%; margin:auto ; margin-top: 10px; ; border-radius: 10px; padding: 10px;">
-                <div class="investors" style="margin: auto; text-align: center;">
-                    <img src="images/james.jpg" alt="james" width="180px" />
-                    <p>James</p>
-                </div>
-                <div class="investors" style="margin: auto; text-align: center;">
-                    <img src="images/john.jpg" alt="John" width="180px" />
-                    <p>John</p>
-                </div>
-                <div class="investors" style="margin: auto; text-align: center;">
-                    <img src="icons/user.jpg" alt="John" width="180px" />
-                    <p>Stephanie</p>
-                </div>
-                <div class="investors" style="margin: auto; text-align: center;">
-                    <img src="images/favour.jpg" alt="John" width="180px" />
-                    <p>Favour</p>
-                </div>
-                <div class="investors" style="margin: auto; text-align: center;">
-                    <img src="images/lyka.jpg" alt="John" width="180px" />
-                    <p>Lyka</p>
-                </div>
-
             </div>
         </div>
 
+        <!-- <div class="team-section">
+            <div class="menu-title" style="text-align:center; font-size: 20px;"><strong>Meet Our Team Of
+                    Developers</strong></div>
+            <div class="carousel menu-items">
+                <template x-for="member in members">
+                    <div class="p-2 bg-gray-100 rounded-md shadow-md cursor-pointer carousel-cell">
+                        <div class="image-holder" x-bind:style="`background-image: url(${member.img});`">
+                        </div>
+                        <div x-text="member.name"
+                            class="pt-2 font-semibold text-center text-gray-800 capitalize product-text">
+                        </div>
+                        <div class="pt-2 font-bold text-center text-blue-700 capitalize product-price"> <span
+                                x-text="member.post"></span>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div> -->
+        <script src="js/app.min.js"></script>
+        <script src="js/flickity.js"></script>
+        <script src="js/about.js"></script>
     </body>
     <footer
-        style="background-color: white;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); padding: 10px; text-align: center; margin-top: 30px;">
+        style="background-color: white;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); padding: 10px; text-align: center; margin-top: 30px; margin-bottom: 0px;">
         <div>
             <img src="icons/android-icon-36x36.png" style="margin: auto; width: 36px;">
         </div>
@@ -210,6 +222,13 @@
             <p>
                 Powered By Team Vault
             </p>
+            <div>
+                <p class="menu-title" style="font-size: 18px;">Sponspors:</p>
+                <div style="display: flex;">
+                    <img src="images/genesys.jpg" style="margin: auto; margin-right: 5px; width: 70px;">
+                    <img src="images/gdsc.jpg" style="margin: auto; margin-left: 5px; width: 70px;">
+                </div>
+            </div>
         </div>
     </footer>
 
