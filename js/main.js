@@ -219,7 +219,7 @@ function component() {
                 desc: " One quantity is a single plate."
             },
             {
-                img: 'images/Jollof-spaghetti.jpeg',
+                img: 'images/jollof-spaghetti.jpg',
                 name: 'Jollof Spaghetti',
                 price: '400',
                 desc: " One quantity is a single plate."
