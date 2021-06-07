@@ -213,7 +213,7 @@ function component() {
         
         grains: [
             {
-                img: 'images/LR-jollof-rice',
+                img: 'images/LR-jollof-rice.jpeg',
                 name: 'Jollof Rice',
                 price: '400',
                 desc: " One quantity is a single plate."
@@ -227,13 +227,13 @@ function component() {
             {
                 name: 'Fried Rice',
                 price: '200',
-                img: 'images/MALTINA.jpg',
+                img: 'images/fried-rice.jpg',
                 desc: "One quantity is a single plate."
             },
             {
                 name: 'Coconut Rice',
                 price: '400',
-                img: 'images/coconut-rice',
+                img: 'images/coconut-rice.jpg',
                 desc: "One quantity is a single plate."
             },
             {
