@@ -26,7 +26,11 @@ function component() {
             {
                 img: 'images/victor.jpg',
                 name: 'Victor'
-            },  
+            }, 
+            {
+                img: 'images/samuel.jpg',
+                name: 'Samuel'
+            },                        
             {
                 img: 'icons/user.jpg',
                 name: 'Stephanie'
