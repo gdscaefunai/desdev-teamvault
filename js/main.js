@@ -26,7 +26,7 @@ function component() {
             },
             {
                 name: 'Fanta',
-                price: '200',
+                price: '100000',
                 img: 'images/Fanta.png',
                 desc: "One quantity is a single 33cl can."
             },
